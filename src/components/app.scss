@@ -1,0 +1,60 @@
+$fa-font-path: '../../node_modules/font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  padding: 1rem;
+  background-color: darken(white, 5%);
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem lighten(black, 65%);
+    background-color: white;
+    .upload-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      background-color: #fda;
+      cursor: pointer;
+      margin-right: 2rem;
+      width: 20rem;
+      &:hover {
+        background-color: #fd8
+      }
+    }
+    .extend-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      background-color: lightblue;
+      cursor: pointer;
+      margin-left: 2rem;
+      width: 20rem;
+      &.disabled {
+        background-color: lightgrey;
+        cursor: default;
+      }
+    }
+  }
+  .systems-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 1rem 0 0 0;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+  }
+}
+

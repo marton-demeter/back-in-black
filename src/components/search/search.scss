@@ -1,0 +1,18 @@
+.search-bar {
+  padding: 0.5rem;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  &.box {
+    border: 1px solid lighten(black, 75%);
+    height: 1.5rem;
+  }
+  input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lighten(black, 50%);
+    width: 100%;
+    font-size: 1rem;
+  }
+}

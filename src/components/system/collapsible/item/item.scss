@@ -1,0 +1,39 @@
+$fa-font-path: '../../../../../node_modules/font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 2rem;
+    z-index: 1;
+    font-size: 0.7rem;
+    .title {
+
+    }
+    &.border {
+      border-bottom: 1px solid lighten(black, 90%);
+    }
+    i {
+      color: grey;
+      height: 100%;
+      width: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .children {
+    display: none;
+    &.visible {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+    }
+  }
+}
